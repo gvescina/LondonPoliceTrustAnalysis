@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stop and Search Map</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+</head>
+<body>
+    <div id="map">{{ map_html|safe }}</div>
+    <div id="controls">
+        <label for="ethnicity">Ethnicity:</label>
+        <select id="ethnicity">
+            <option value="All">All</option>
+            {% for value in ethnicities %}
+                <option value="{{ value }}">{{ value }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="crimeType">Crime Type:</label>
+        <select id="crimeType">
+            <option value="All">All</option>
+            {% for value in crime_types %}
+                <option value="{{ value }}">{{ value }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="outcome">Outcome:</label>
+        <select id="outcome">
+            <option value="All">All</option>
+            {% for value in outcomes %}
+                <option value="{{ value }}">{{ value }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" value="{{ min_date }}">
+
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" value="{{ max_date }}">
+    </div>
+    <script>
+        $(document).ready(function() {
+            function updateMap() {
+                var filters = {
+                    ethnicity: $('#ethnicity').val(),
+                    crime_type: $('#crimeType').val(),
+                    outcome: $('#outcome').val(),
+                    start_date: $('#startDate').val(),
+                    end_date: $('#endDate').val()
+                };
+
+                $.ajax({
+                    url: '/filter',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(filters),
+                    success: function(response) {
+
+                        $('#map').html(response);
+                    }
+                });
+            }
+
+            $('#ethnicity, #crimeType, #outcome, #startDate, #endDate').change(updateMap);
+        });
+    </script>
+</body>
+</html>
