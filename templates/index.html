@@ -60,12 +60,13 @@
                     contentType: 'application/json',
                     data: JSON.stringify(filters),
                     success: function(response) {
-
+                        // Replace the map with the filtered map HTML
                         $('#map').html(response);
                     }
                 });
             }
 
+            // Trigger map update on filter change
             $('#ethnicity, #crimeType, #outcome, #startDate, #endDate').change(updateMap);
         });
     </script>
