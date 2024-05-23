@@ -1,0 +1,67 @@
+﻿Primary or Secondary;home LA  code;borough;far away percentage
+primary;E09000002;Barking and Dagenham;6,3
+primary;E09000003;Barnet;7,8
+primary;E09000004;Bexley;6,7
+primary;E09000005;Brent;5,9
+primary;E09000006;Bromley;5,8
+primary;E09000007;Camden;2,4
+primary;E09000008;Croydon;8,8
+primary;E09000009;Ealing;4,2
+primary;E09000010;Enfield;6,9
+primary;E09000011;Greenwich;7,4
+primary;E09000012;Hackney;2,2
+primary;E09000013;Hammersmith and Fulham;1,9
+primary;E09000014;Haringey;3,8
+primary;E09000015;Harrow;5,2
+primary;E09000016;Havering;7,2
+primary;E09000017;Hillingdon;6,1
+primary;E09000018;Hounslow;5,2
+primary;E09000019;Islington;2
+primary;E09000020;Kensington and Chelsea;1,8
+primary;E09000021;Kingston upon Thames;2,7
+primary;E09000022;Lambeth;5,1
+primary;E09000023;Lewisham;5,5
+primary;E09000024;Merton;3,7
+primary;E09000025;Newham;3,6
+primary;E09000026;Redbridge;4,7
+primary;E09000027;Richmond upon Thames;2
+primary;E09000028;Southwark;2,7
+primary;E09000029;Sutton;4,9
+primary;E09000030;Tower Hamlets;2
+primary;E09000031;Waltham Forest;3,6
+primary;E09000032;Wandsworth;3,6
+primary;E09000033;Westminster;2,8
+primary;;England;7,4
+secondary;E09000002;Barking and Dagenham;12,9
+secondary;E09000003;Barnet;18,3
+secondary;E09000004;Bexley;11,7
+secondary;E09000005;Brent;16,5
+secondary;E09000006;Bromley;19,4
+secondary;E09000007;Camden;7,2
+secondary;E09000008;Croydon;21
+secondary;E09000009;Ealing;12,7
+secondary;E09000010;Enfield;14,6
+secondary;E09000011;Greenwich;20,9
+secondary;E09000012;Hackney;6,1
+secondary;E09000013;Hammersmith and Fulham;9,5
+secondary;E09000014;Haringey;10
+secondary;E09000015;Harrow;20
+secondary;E09000016;Havering;17,1
+secondary;E09000017;Hillingdon;20,9
+secondary;E09000018;Hounslow;15,8
+secondary;E09000019;Islington;7,9
+secondary;E09000020;Kensington and Chelsea;7,2
+secondary;E09000021;Kingston upon Thames;9
+secondary;E09000022;Lambeth;12,4
+secondary;E09000023;Lewisham;16,6
+secondary;E09000024;Merton;16,6
+secondary;E09000025;Newham;6,5
+secondary;E09000026;Redbridge;11,3
+secondary;E09000027;Richmond upon Thames;9,4
+secondary;E09000028;Southwark;7,9
+secondary;E09000029;Sutton;7
+secondary;E09000030;Tower Hamlets;3
+secondary;E09000031;Waltham Forest;7
+secondary;E09000032;Wandsworth;13,3
+secondary;E09000033;Westminster;9
+secondary;;England;18,4
